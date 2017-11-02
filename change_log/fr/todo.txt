@@ -1,1 +1,0 @@
-Utilisation du langage ¨pyba pour rédiger ce document. Ceci a permis la mise en ligne d'une version HTML très pratique.

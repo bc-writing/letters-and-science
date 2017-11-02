@@ -29,10 +29,12 @@
 
 \clubpenalty=10000
 
-\titleformat*{\section}{\center \huge \bf}
-\titleformat*{\subsection}{\center \large \bf}
-\newcommand{\specialSubSection}[1]{%
-    \subsection*{#1} \addcontentsline{toc}{subsection}{#1}
+\titleformat*{\section}{\center \huge \bfseries}
+\titleformat*{\subsection}{\center \large \bfseries}
+\newcommand{\specialSubSection}[1]{
+    \subsection*{#1}
+    
+    \addcontentsline{toc}{subsection}{#1}
 }%
 
 \renewcommand{\thefootnote}{\roman{footnote}}
