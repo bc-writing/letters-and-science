@@ -24,13 +24,22 @@
 
 \usepackage{tikz}
 
+\usepackage{adforn}
 
-%%% FORMATTINGS
+
+%%% FORMATINGS
 
 \clubpenalty=10000
 
-\titleformat*{\section}{\center \huge \bfseries}
-\titleformat*{\subsection}{\center \large \bfseries}
+% Source: https://tex.stackexchange.com/q/486100
+\setkomafont{section}{\center\Large\bfseries}
+\setkomafont{subsection}{\center\large\bfseries}
+\let\raggedpart\centering
+
+
+
+
+
 \newcommand{\specialSubSection}[1]{
     \subsection*{#1}
     
@@ -84,5 +93,5 @@
 \newcommand{\cadre}[1]{%
     \vspace{0.2cm}
     \lettrine[loversize=0.6,lraise=0.2,findent=0.5em,nindent=0em]{%
-        \framebox[\lrg]{#1\rule[-2.5\prof]{0pt}{3.2\htr}}}%
+        \framebox[\lrg]{{#1}\rule[-2.5\prof]{0pt}{3.2\htr}}}%
 }%
